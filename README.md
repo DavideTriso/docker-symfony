@@ -51,4 +51,4 @@ symfony:
 
 ### Debugging
 
-The `XDebug` extension is available in the image, but is disabled by default. To enable it, use a custom ini file, like explained above.
+The `XDebug` extension is available in the image, but is disabled by default. To enable it, use a custom `ini` file, like explained above.
