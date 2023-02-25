@@ -7,10 +7,9 @@ USER    root
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
 
-RUN     apk --no-cache add sudo \
-        && chmod +x /usr/local/bin/install-php-extensions \
+RUN     chmod +x /usr/local/bin/install-php-extensions \
         && apk update \
-        && apk add --update \
+        && apk add --update --no-cache \
             nano \
         && install-php-extensions \
             amqp \
