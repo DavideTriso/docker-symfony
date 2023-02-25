@@ -37,7 +37,7 @@ Execute the `./build-and-push.sh` script to build and push all images to Docker 
 
 //TODO
 
-The image uses a production-optimized php.ini file. To customize the PHP settings to your needs it is sufficient to bind-mount a custom ini file in the container's /usr/local/etc/php/conf.d/ directory.
+The image uses a production-optimized php.ini file. To customize the PHP settings to your needs it is sufficient to bind-mount a custom ini file in the container's `/usr/local/etc/php/conf.d/` directory.
 
 E.g.:
 
@@ -52,3 +52,8 @@ symfony:
 ### Debugging
 
 The `XDebug` extension is available in the image, but is disabled by default. To enable it, use a custom `ini` file, like explained above.
+
+
+## License
+
+Licensed under the terms of the [MIT](LICENSE) license.
