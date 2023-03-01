@@ -24,11 +24,14 @@ RUN     chmod +x /usr/local/bin/install-php-extensions \
             mongodb \
             opcache \
             pdo_mysql \
-            redis \ 
+            redis \
+            sysvsem \ 
             soap \
             xdebug \
+            xsl \
             zstd \
             @composer \
         && mkdir /usr/local/etc/php/conf.d/disabled \ 
         && mv /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/disabled \ 
-        && mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+        && mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
+        && mkdir -p /var/www/html/public
