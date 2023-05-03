@@ -35,7 +35,7 @@ Execute the `./build-and-push.sh` script to build and push all images to Docker 
 
 ## How to use
 
-//TODO
+This image is created starting from the official PHP Docker image. Look at the "How to use this image" section of the [official image readme](https://hub.docker.com/_/php) to learn how to configure and use this image.
 
 The image uses a production-optimized php.ini file. To customize the PHP settings to your needs it is sufficient to bind-mount a custom ini file in the container's `/usr/local/etc/php/conf.d/` directory.
 
