@@ -23,7 +23,10 @@ RUN     chmod +x /usr/local/bin/install-php-extensions \
             mcrypt \
             mongodb \
             opcache \
+            opentelemetry \
+            open-telemetry/opentelemetry-php-instrumentation@main \
             pdo_mysql \
+            protobuf \
             redis \
             sysvsem \ 
             soap \
