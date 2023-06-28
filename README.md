@@ -89,7 +89,7 @@ schedule_runner:
         - ./run-schedule:/etc/periodic/5min/run-schedule:rw
 ```
 
-> NOTE: When the container starts up, all scripts located in the subfolders of `/etc/periodic/5min` are made executable using the `chmod` command. Hence, it is important to ensure that these files are writable by the container.
+> NOTE: When the container starts up, all scripts located in the subfolders of `/etc/periodic/` are made executable using the `chmod` command. Hence, it is important to ensure that these files are writable by the container.
 
 ### Debugging
 
