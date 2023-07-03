@@ -1,6 +1,7 @@
 FROM    php:8.2-fpm-alpine
 
 ENV     ENV=$ENV
+ENV     TZ=UTC
 
 USER    root
 
@@ -10,6 +11,7 @@ ADD     https://github.com/mlocati/docker-php-extension-installer/releases/lates
 RUN     chmod +x /usr/local/bin/install-php-extensions \
         && apk update --no-cache \
         && apk add --update --no-cache \
+            tzdata \
             nano \
         && install-php-extensions \
             amqp \
@@ -24,7 +26,6 @@ RUN     chmod +x /usr/local/bin/install-php-extensions \
             mongodb \
             opcache \
             opentelemetry \
-            open-telemetry/opentelemetry-php-instrumentation@main \
             pdo_mysql \
             protobuf \
             redis \
