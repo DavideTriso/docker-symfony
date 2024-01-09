@@ -51,7 +51,7 @@ symfony:
 
 ### Cron Images
 
-The chron images facilitate the execution of tasks at regular intervals. They provide a convenient folder structure in the `/etc/periodic` path, which includes the following subfolders:
+The cron images facilitate the execution of tasks at regular intervals. They provide a convenient folder structure in the `/etc/periodic` path, which includes the following subfolders:
 
 * 1min
 * 5min
