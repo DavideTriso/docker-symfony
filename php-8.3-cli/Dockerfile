@@ -33,6 +33,7 @@ RUN     chmod +x /usr/local/bin/install-php-extensions \
             soap \
             xdebug \
             xsl \
+            zip \
             zstd \
             @composer \
         && mkdir /usr/local/etc/php/conf.d/disabled \ 
