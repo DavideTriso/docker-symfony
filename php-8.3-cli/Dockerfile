@@ -1,6 +1,5 @@
 FROM    php:8.3-cli-alpine
 
-ENV     ENV=$ENV
 ENV     TZ=UTC
 
 USER    root
@@ -19,7 +18,7 @@ RUN     chmod +x /usr/local/bin/install-php-extensions \
             bcmath \
             gd \
             igbinary \
-            imagick \
+            imagick/imagick@master \
             imap \
             intl \
             mcrypt \
