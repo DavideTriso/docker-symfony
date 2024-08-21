@@ -7,13 +7,13 @@ Image to run Symfony apps in docker
 ### Build the image
 
 ```
-docker build -t davidetriso/symfony:[tagname-dir_name] ./[tagname-dir_name]
+docker buildx build --tag davidetriso/symfony:[tagname-dir_name] -o type=image --platform=linux/arm64,linux/amd64 ./[tagname-dir_name]
 ```
 
 E.g.:
 
 ```
-docker build -t davidetriso/symfony:php-8.1-fpm ./php-8.1-fpm
+docker buildx build --tag davidetriso/symfony:php-8.1-fpm -o type=image --platform=linux/arm64,linux/amd64 ./php-8.1-fpm
 ```
 
 ### Push image to Docker Hub

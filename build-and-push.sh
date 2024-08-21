@@ -5,9 +5,7 @@ for tag in "${TAGS[@]}"
 do
 	echo "  "
     echo "Start build of ${tag} ======================================================================================="
-    docker build -t davidetriso/symfony:${tag} ./${tag}
+    docker buildx build --push --tag davidetriso/symfony:${tag} --output type=image --platform linux/arm64,linux/amd64 ./${tag}
     echo "Built of ${tag} completed ==================================================================================="
     echo "  "
 done
-
-docker push --all-tags davidetriso/symfony
