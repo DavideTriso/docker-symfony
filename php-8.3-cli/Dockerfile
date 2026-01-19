@@ -22,7 +22,7 @@ RUN     chmod +x /usr/local/bin/install-php-extensions \
             imap \
             intl \
             mcrypt \
-            mongodb \
+            mongodb-^1 \
             opcache \
             opentelemetry \
             pdo_mysql \
